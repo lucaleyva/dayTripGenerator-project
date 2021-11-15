@@ -12,3 +12,12 @@ function getRandomElementFromArray(array){
 
 let randomDestination = getRandomElementFromArray(destinations);
 console.log(randomDestination)
+
+let randomResturant = getRandomElementFromArray(resturants);
+console.log(randomResturant)
+
+let randomTransportation = getRandomElementFromArray(transportion);
+console.log(randomTransportation)
+
+let randomEntertainment = getRandomElementFromArray(entertainment);
+console.log(randomEntertainment)
