@@ -10,3 +10,5 @@ function getRandomElementFromArray(array){
     return array[Math.floor(Math.random() * array.length)]
 }
 
+let randomDestination = getRandomElementFromArray(destinations);
+console.log(randomDestination)
