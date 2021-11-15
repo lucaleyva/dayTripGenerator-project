@@ -6,3 +6,7 @@ let transportion = ['Train','Car','Bike','Bus'];
 let entertainment = ['Hike','Food tour','Museum','Concert'];
 
 //** STEP 2: Randomly select some elements
+function getRandomElementFromArray(array){
+    return array[Math.floor(Math.random() * array.length)]
+}
+
