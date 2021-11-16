@@ -1,32 +1,35 @@
 "use strict"
-// ** STEP 1: Create arrays for destination, restauarant, transportation, and entertainment 
+//** Step 1: Create four arrays for destination, restaurants, transporation, entertainment
 
-let destinations = ['NYC', 'Philly', 'Boston', 'Upstate',];
-let resturants = ['Mexican', 'Thai', 'Indian','Ethiopian'];
-let transportion = ['Train','Car','Bike','Bus'];
-let entertainment = ['Hike','Food tour','Museum','Concert'];
+let destinations = ["Key West", "Seattle", "Austin", "Boston"];
+let restaurants = ["Steak", "Mexican", "Italian", "Brunch Stuff"];
+let transportation = ["bike", "car", "airplane", "submarine"];
+let entertainment = ["live music", "fishing", "karate", "yoga"];
 let tripFeatures = [
-    getRandomElementFromArray(destinations),
-    getRandomElementFromArray(resturants),
-    getRandomElementFromArray(transportion),
-    getRandomElementFromArray(entertainment),
-]
+  getRandomElementFromArray(destinations),
+  getRandomElementFromArray(restaurants),
+  getRandomElementFromArray(transportation),
+  getRandomElementFromArray(entertainment),
+];
 
-//** STEP 2: Randomly select some elements
+//** Step 2: Randomly select some elements
 
-function getRandomElementFromArray(array){
-    return array[Math.floor(Math.random() * array.length)];
+function getRandomElementFromArray(array) {
+  return array[Math.floor(Math.random() * array.length)];
 }
 
-// ** STEP 3: Wrie a function to display our completed trip as an alert
+//** Step 3: Write a function to display our generated trip as an alert
 
-function displayTrip(arrayOfFeatures){
-    // ** Declare a final variable to be alerted
-    let finalString = "";
-    //** Iterate through our array of features and build the final string
-    for (let index = 0; index < array.length; index++){
-        finalString += arrayOfFeatures(index);
-    }
-    // ** Alert the final string
-    alert(finalString);
+function displayTrip(arrayOfFeatures) {
+  //** Declare a final variable to be alerted
+  let finalString = "";
+
+  //** Iterate through our array of features and build the final string
+  for (let index = 0; index < arrayOfFeatures.length; index++) {
+    finalString += arrayOfFeatures[index] + "\n";
+  }
+
+  //** Alert the final string
+  alert(finalString);
 }
+
